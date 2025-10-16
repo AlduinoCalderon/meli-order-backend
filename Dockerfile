@@ -1,17 +1,14 @@
-# Use a lightweight OpenJDK image
-FROM eclipse-temurin:17-jre-alpine
 
-# Set the working directory
+# ---- Build Stage ----
+FROM eclipse-temurin:17-jdk-alpine as build
 WORKDIR /app
+COPY . .
+RUN ./mvnw clean package -DskipTests
 
-# Copy the built jar from the target directory
-COPY target/ecommerce-0.0.1-SNAPSHOT.jar app.jar
-
-# Expose the default Spring Boot port
+# ---- Package Stage ----
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
+COPY --from=build /app/target/ecommerce-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-
-# Set environment variables for production profile (can be overridden)
 ENV SPRING_PROFILES_ACTIVE=prod
-
-# Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
