@@ -1,6 +1,7 @@
 .git/
 .idea/
 *.iml
+JavaDoc-Checklist.md
 *.log
 *.md
 *.env

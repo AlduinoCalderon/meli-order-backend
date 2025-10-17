@@ -1,5 +1,10 @@
 # Project Roadmap
 
+---
+**File:** Roadmap.md
+**Purpose:** Outlines objectives, milestones, and timeline for the Order Management System backend API project. Maintained for tracking progress and team alignment.
+---
+
 ## Objectives
 
 ### General Objective

@@ -1,5 +1,10 @@
 # Project Backlog
 
+---
+**File:** Backlog.md
+**Purpose:** Tracks user stories, requirements, and acceptance criteria for the Order Management System backend API project. Maintained for team visibility and planning.
+---
+
 ## User Stories
 
 ### User Story 1
