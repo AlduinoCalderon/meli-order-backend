@@ -1,65 +1,53 @@
-# Order Management System – Backend API & Documentation
+# Order Management System – Deployed API & Documentation
 
 ## Overview
 
-This repository contains the backend API and project documentation for the Order Management System, developed as part of a technical challenge focused on Spring and Spring Boot in Java for Web Applications. The primary goal is to restore and enhance the reliability of MELI's order management system, following a real-world incident that resulted in significant operational disruptions.
+This repository contains the backend API and documentation for the Order Management System, now deployed as a web service. The API is hosted on a cloud platform (e.g., Render) and is accessible for integration, testing, and production use.
 
-**Key technologies:**  
-- Java 17+  
-- Spring Boot 3.x  
-- PostgreSQL (prod), H2 (dev/test)  
-- Swagger/OpenAPI for API docs  
-- Docker for deployment  
-- Postman for API testing  
-- JUnit for testing
+**Key technologies:**
+- Java 17+
+- Spring Boot 3.x
+- PostgreSQL (production), H2 (dev/test)
+- Swagger/OpenAPI for live API docs
+- Docker for deployment
+- Postman for API testing
+- JUnit for automated tests
 
-## Project Context
+## Deployed API Access
 
-MELI, a leading e-commerce company, experienced major issues with its order management system due to environment misconfiguration and database failures. The challenge was to analyze, re-design, and implement a robust backend solution with clear environment management, comprehensive API documentation, and strong testing practices.
+The API is available as a web service. You can:
+- Access live API documentation via Swagger UI: `/swagger-ui.html` or `/swagger-ui/index.html` on the deployed URL
+- Use the `/api/orders` endpoint for order management operations (CRUD)
+- Integrate with the API from any frontend or external system
 
-**This repository will:**  
-- Serve as the main source of backend documentation  
-- Contain the Spring Boot API source code  
-- Provide all technical guides, configuration, and API documentation  
-- Include Docker and Postman assets  
-- Log key team decisions and learning points
+*Note: The frontend application will be developed and hosted separately.*
 
-*Note: A separate repository will be created later for the frontend application that consumes this API.*
+## How to Use the Deployed API
 
-## Getting Started
+1. Visit the deployed API URL (see your cloud provider dashboard for the endpoint)
+2. Explore and test endpoints using Swagger UI (`/swagger-ui.html` or `/swagger-ui/index.html`)
+3. Integrate with `/api/orders` for order management
+4. Use Postman or other tools for API testing
 
-> **Note:** The first version of this repository focuses on backend setup, project organization, and the documentation foundation.
+## Deployment & Operations
 
-### How to Run (dev environment)
-
-1. Clone this repository
-2. Import into your favorite Java IDE (Java 17+ required)
-3. Run with the default profile (`dev`) using the included H2 database
-4. API documentation will be accessible via Swagger UI (URL will be provided in later versions)
-5. For Docker-based deployment, see the `docker/` directory (to be added in Sprint 1)
-
-### Sprint 1 Milestones
-
-- [ ] Setup Spring Boot project structure
-- [ ] Implement Order entity & CRUD API
-- [ ] Integrate with H2/PostgreSQL database
-- [ ] Basic code documentation and comments
-- [ ] Create Postman collection for API testing
-- [ ] Prepare Docker startup script
-- [ ] Document initial team decisions
+- The API is containerized with Docker and deployed to a cloud platform (e.g., Render)
+- Environment variables and database connections are managed for production reliability
+- Connection pool and resource limits are configured for cloud hosting
 
 ## Project Structure
 
 - `/docs` – Project documentation (roadmap, backlog, Gantt chart, etc.)
-- `/src` – Java source code (to be added)
-- `/docker` – Docker scripts/configs (to be added)
-- `/postman` – Postman API collections (to be added)
+- `/src` – Java source code
+- `/docker` – Docker scripts/configs
+- `/postman` – Postman API collections
 
 ## Next Steps
 
-- Continue with Sprint 1 tasks and update this README as the project evolves.
-- Add detailed API documentation and endpoint usage in later sprints.
+- Monitor the deployed API for reliability and performance
+- Update documentation as endpoints and features evolve
+- Add more usage examples and integration guides
 
 ---
 
-**For contributors:** Please refer to the project roadmap and backlog in the `/docs` folder for current objectives, milestones, and accepted practices.
+**For contributors:** Please refer to the project roadmap and backlog in the `/docs` folder for current objectives, milestones, and accepted practices. Focus on improving the deployed API and its documentation for production use.
