@@ -25,9 +25,16 @@ The API is available as a web service. You can:
 ## How to Use the Deployed API
 
 1. Visit the deployed API URL (see your cloud provider dashboard for the endpoint)
-2. Explore and test endpoints using Swagger UI (`/swagger-ui.html` or `/swagger-ui/index.html`)
+2. Explore and test endpoints using Swagger UI:
+	- `/swagger-ui.html` or `/swagger-ui/index.html` (for live API docs)
 3. Integrate with `/api/orders` for order management
 4. Use Postman or other tools for API testing
+
+## Monitoring & Health Checks
+
+- Check API and database health at `/api/orders/health` (returns status and DB connectivity)
+- Monitor uptime and error logs via your cloud provider dashboard (e.g., Render)
+- Review test results and coverage in the `/docs` folder
 
 ## Deployment & Operations
 
