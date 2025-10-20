@@ -8,13 +8,13 @@
 ## Sprints
 - Sprint 1: Project Setup & Core Features (Completed)
 - Sprint 2: Profiles & Config (Completed)
-- Sprint 3: Docs & Testing (In Progress)
+- Sprint 3: Docs & Testing (Completed)
 - Final Delivery
 
 ## Sprint Status
 Sprint 1: Completed
 Sprint 2: Completed
-Sprint 3: In progress
+Sprint 3: Completed
 
 ## User Stories
 
@@ -67,7 +67,7 @@ Sprint 3: In progress
 - [x] Unit and integration tests cover main API usage scenarios
 - [x] Test results are documented and reviewed
 - [x] Monitoring instructions are included in the documentation
-- [x] Checklist of final requirements is completed before delivery
+- [ ] Checklist of final requirements is completed before delivery
 
 ## Requirements Tracking Table 1: User Stories and Requirements
 
