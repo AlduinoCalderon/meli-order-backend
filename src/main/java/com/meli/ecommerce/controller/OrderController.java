@@ -11,6 +11,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import jakarta.validation.Valid;
 
 @RestController
 /**
@@ -81,7 +82,7 @@ public class OrderController {
      * @param order the order to create
      * @return the created order
      */
-    public Order createOrder(@RequestBody Order order) {
+    public Order createOrder(@Valid @RequestBody Order order) {
         return orderService.save(order);
     }
 
@@ -93,7 +94,7 @@ public class OrderController {
      * @param order the updated order data
      * @return the updated order if found, otherwise 404
      */
-    public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
+    public ResponseEntity<Order> updateOrder(@PathVariable Long id, @Valid @RequestBody Order order) {
         return orderService.findById(id)
                 .map(existing -> {
                     order.setId(id);

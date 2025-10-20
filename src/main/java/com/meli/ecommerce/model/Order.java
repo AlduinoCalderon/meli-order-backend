@@ -1,6 +1,7 @@
 package com.meli.ecommerce.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -15,21 +16,29 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank
     @Column(nullable = false)
     private String productSku;
 
+    @NotBlank
     @Column(nullable = false)
     private String productName;
 
+    @Size(max = 1000)
     @Column(length = 1000)
     private String productDescription;
 
+    @NotNull
+    @Min(1)
     @Column(nullable = false)
     private Integer quantity;
 
+    @NotNull
+    @DecimalMin(value = "0.0", inclusive = false)
     @Column(nullable = false)
     private BigDecimal price;
 
+    @NotNull
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
