@@ -110,8 +110,6 @@ As of October 19, 2025, the following has been accomplished:
 - Final analysis & results docs: Not started
 - Video presentation: Not started
 
-See `Project-Completion-Checklist.md` for a detailed, up-to-date checklist.
-
 ## Project Gantt Chart
 ![Project Gantt Chart](./Images/GanttChart.png)
 
