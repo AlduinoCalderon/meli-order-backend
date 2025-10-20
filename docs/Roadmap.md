@@ -5,6 +5,11 @@
 **Purpose:** Outlines objectives, milestones, and timeline for the Order Management System backend API project. Maintained for tracking progress and team alignment.
 ---
 
+## Sprint Progress
+Sprint 1: Completed
+Sprint 2: Completed
+Sprint 3: In progress
+
 ## Objectives
 
 ### General Objective
@@ -22,62 +27,93 @@ Restore and enhance the reliability of MELI's order management system by restruc
 ## Timeline and Milestones
 
 ### Sprint 1 (October 14-16, 2025)
-- Setup Spring Boot project structure (Java 17+)
-- Implement core Order entity and REST CRUD resource
-- Configure database connection (H2/PostgreSQL)
-- Initial code documentation and comments
-- Create and export Postman collection for API
-- Develop Docker startup script
-- Draft technical decisions and justifications
+- Implement Order entity and CRUD REST API (User Story 1)
+- Integrate database (PostgreSQL)
+- Establish project structure following Spring Boot best practices
 
 ### Sprint 2 (October 17-19, 2025)
-- Configure Spring profiles for dev/test/prod environments
-- Securely manage system variables
-- Update configuration files for each environment
-- Conduct partial peer reviews and integrate feedback
-- Document profile/configuration usage in README
-- Upload all source/configuration files
+- Configure environment-specific profiles and system variables (User Story 3)
+- Document environment management and switching profiles
+- Ensure no sensitive data is committed
 
 ### Sprint 3 (October 20-21, 2025)
-- Integrate Swagger/OpenAPI for API documentation
-- Write and run unit and integration tests
-- Finalize test scripts and checklists
-- Ensure API documentation is published and accessible
-- Complete all code quality and documentation requirements
+- Integrate Swagger/OpenAPI documentation (User Story 2)
+- Update README with API usage and endpoint details
+- Create Postman collection for API endpoints
 
 ### Final Delivery (October 22-23, 2025)
-- Deliver analysis and results presentation
-- Record and upload solution presentation video
+- Deploy service to Render (User Story 4)
+- Document deployment process and troubleshooting steps
+- Implement health check endpoint and monitoring instructions (User Story 5)
+- Write and run unit/integration tests
+- Document test results and final requirements checklist
 
 ## Deliverables
 
 ### Sprint 1
-- Spring Boot project initialized with Java 17+
-- Order entity and CRUD REST controller
-- Connected database (H2 for dev, PostgreSQL for prod)
-- Postman collection for API endpoints
-- Docker-based startup script
-- Initial README and technical notes
+- Order entity and CRUD REST API implemented
+- Database integration
+- Project structure following Spring Boot best practices
 
 ### Sprint 2
-- Environment-specific configuration files (application-dev.yml, application-test.yml, application-prod.yml)
-- Secure and documented system variable setup
-- Updated README with environment usage instructions
-- Source code and configuration files in repo
-- Peer review feedback log
+- Environment-specific configuration files and system variable setup
+- Documentation for environment management and switching profiles
 
 ### Sprint 3
-- Integrated Swagger/OpenAPI documentation
-- JUnit (or similar) test suite for API
-- Checklist of requirements and test results
-- Published and accessible API documentation
+- Swagger/OpenAPI documentation integrated
+- README updated with API usage and endpoints
+- Postman collection for API endpoints
 
-### Final Delivery
-- Analysis and Results documentation
-- Solution presentation video
+
+## Activity Breakdown & Estimates
+
+| Activity | Stage | Estimated Hours | Role |
+|----------|-------|----------------|------|
+| Design Order entity & CRUD API | Sprint 1 | 4 | Backend Developer |
+| Database integration (H2/PostgreSQL) | Sprint 1 | 4 | Backend Developer |
+| Project structure setup | Sprint 1 | 2 | Backend Developer |
+| Environment profiles & variables | Sprint 2 | 3 | DevOps Engineer |
+| Environment documentation | Sprint 2 | 2 | DevOps Engineer |
+| Swagger/OpenAPI integration | Sprint 3 | 2 | Backend Developer |
+| README & API docs | Sprint 3 | 2 | Backend Developer |
+| Postman collection | Sprint 3 | 2 | QA Engineer |
+| Deployment to Render | Final | 3 | Deployment Engineer |
+| Deployment docs & troubleshooting | Final | 2 | Deployment Engineer |
+| Health check endpoint | Final | 2 | Backend Developer |
+| Unit/integration tests | Final | 4 | QA Engineer |
+| Test results & checklist | Final | 1 | QA Engineer |
+
+## Budget Estimate
+
+| Role                | Hourly Rate (USD) | Estimated Hours | Subtotal (USD) |
+|---------------------|------------------:|---------------:|---------------:|
+| Backend Developer   | 50.00             | 16             | 800.00         |
+| DevOps Engineer     | 55.00             | 5              | 275.00         |
+| QA Engineer         | 40.00             | 7              | 280.00         |
+| Deployment Engineer | 45.00             | 5              | 225.00         |
+| Total               | 47.88 (avg)       | 33             | 1,580.00       |
+
+## Project Progress
+
+As of October 19, 2025, the following has been accomplished:
+- Order entity and CRUD REST API: Complete
+- Database integration (H2/PostgreSQL): Complete
+- Project structure: Complete
+- Spring profiles and environment variables: Complete
+- Swagger/OpenAPI documentation: Complete
+- README and API usage docs: Complete
+- Postman collection: Complete
+- Deployment to Render: Complete
+- Health check endpoint: Complete
+- Unit/integration tests: In progress
+- Monitoring and requirements checklist: Complete
+- Final analysis & results docs: Not started
+- Video presentation: Not started
+
+See `Project-Completion-Checklist.md` for a detailed, up-to-date checklist.
 
 ## Project Gantt Chart
-![Project Gantt Chart](GanttChart.png)
+![Project Gantt Chart](./Images/GanttChart.png)
 
 ## Technologies and Tools
 - Java 17+: Backend programming language
