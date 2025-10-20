@@ -2,7 +2,7 @@
 
 ---
 **File:** Backlog.md
-**Purpose:** Tracks user stories, requirements, and acceptance criteria for the Order Management System backend API project. Maintained for team visibility and planning. See also: Project-Completion-Checklist.md for current progress.
+**Purpose:** Tracks user stories, requirements, and acceptance criteria for the Order Management System backend API project. Maintained for team visibility and planning.
 ---
 
 ## Sprints
@@ -67,7 +67,6 @@ Sprint 3: Completed
 - [x] Unit and integration tests cover main API usage scenarios
 - [x] Test results are documented and reviewed
 - [x] Monitoring instructions are included in the documentation
-- [ ] Checklist of final requirements is completed before delivery
 
 ## Requirements Tracking Table 1: User Stories and Requirements
 
@@ -77,7 +76,7 @@ Sprint 3: Completed
 | API Documentation | - Integrate Swagger/OpenAPI<br>- Update README with API usage and endpoints |
 | DevOps & Environment Management | - Configure Spring profiles for dev, test, prod<br>- Use environment variables for sensitive/config settings<br>- Document profile switching and environment management |
 | Cloud Deployment | - Deploy service to Render<br>- Document deployment process and troubleshooting steps |
-| Testing & Monitoring | - Implement health check endpoint<br>- Write unit/integration tests<br>- Document test results and monitoring instructions<br>- Complete requirements checklist |
+| Testing & Monitoring | - Implement health check endpoint<br>- Write unit/integration tests<br>- Document test results and monitoring instructions |
 
 ## Requirements Tracking Table 2: Prioritized Requirements
 
