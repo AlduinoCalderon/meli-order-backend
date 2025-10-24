@@ -87,15 +87,27 @@ Restore and enhance the reliability of MELI's order management system by restruc
 
 | Role                | Hourly Rate (USD) | Estimated Hours | Subtotal (USD) |
 |---------------------|------------------:|---------------:|---------------:|
-| Backend Developer   | 50.00             | 16             | 800.00         |
-| DevOps Engineer     | 55.00             | 5              | 275.00         |
-| QA Engineer         | 40.00             | 7              | 280.00         |
-| Deployment Engineer | 45.00             | 5              | 225.00         |
-| Total               | 47.88 (avg)       | 33             | 1,580.00       |
+| Backend Developer   | 21.00             | 16             | 336.00         |
+| DevOps Engineer     | 21.00             | 5              | 105.00         |
+| QA Engineer         | 17.00             | 7              | 119.00         |
+| Deployment Engineer | 21.00             | 5              | 105.00         |
+| Project Manager     | 25.00             | 6              | 150.00         |
+| Total               | 21.00 (avg)       | 39             | 815.00         |
 
 ## Project Progress
 
-As of October 19, 2025, the following has been accomplished:
+As of October 23, 2025, the following has been accomplished:
+
+---
+## API Sale Information
+
+**Order Management API**
+- Development cost for 33 hours: **$695 USD**
+- Rounded sale price: **$1000 USD** (API only, PM not included)
+- Includes: Full backend, documentation, tests, deployment scripts
+- Project Manager available for an additional fee
+
+---
 - Order entity and CRUD REST API: Complete
 - Database integration (H2/PostgreSQL): Complete
 - Project structure: Complete
@@ -107,8 +119,8 @@ As of October 19, 2025, the following has been accomplished:
 - Health check endpoint: Complete
 - Unit/integration tests: Complete
 - Monitoring and requirements checklist: Complete
-- Final analysis & results docs: Not started
-- Video presentation: Not started
+- Final analysis & results docs: Complete
+- Video presentation: Complete
 
 ## Project Gantt Chart
 ![Project Gantt Chart](./Images/GanttChart.png)
